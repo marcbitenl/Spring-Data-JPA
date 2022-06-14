@@ -87,7 +87,6 @@ public class CrudCargoService {
 		cargoRepository.deleteById(id);
 		System.out.println("Deletado");
 
-		
 	}
 
 }
