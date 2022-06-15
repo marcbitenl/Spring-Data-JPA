@@ -72,5 +72,18 @@ public class RelatoriosService {
 				list.forEach(System.out::println);
 		
 	}
+	
+	private void buscaFuncionarioDataContratacao(Scanner scanner) {
+		System.out.println("Qual data deseja pesquisar");
+		String data = scanner.next();
+		LocalDate localDate = LocalDate.parse(data, formatter);
+		
+		List<Funcionario> list = funcionarioRepository.findDataContratacaoMaior(localDate);
+		list.forEach(System.out::println);
+		
+		 
+		
+		
+	}
 
 }
